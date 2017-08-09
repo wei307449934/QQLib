@@ -44,12 +44,12 @@ NSString * const ID = @"cycleCell";
 - (void)setupMainView
 {
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    flowLayout.itemSize = CGSizeMake(kWidth, 200);
+    flowLayout.itemSize = CGSizeMake(200, 200);
     flowLayout.minimumLineSpacing = 0;
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     _flowLayout = flowLayout;
     
-    UICollectionView *mainView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kWidth, 200) collectionViewLayout:flowLayout];
+    UICollectionView *mainView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 200, 200) collectionViewLayout:flowLayout];
 //    mainView.backgroundColor = [UIColor lightGrayColor];
     mainView.pagingEnabled = YES;
     mainView.showsHorizontalScrollIndicator = NO;
